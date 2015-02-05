@@ -1,9 +1,9 @@
 var express = require('express');
 var path = require('path');
 var pitchfork = require('./pitchfork.js');
-var helper = require('./helpers.js');
+var utils = require('./utils.js');
 
-var Result = require('./results.js');
+var Result = require('./results.schema.js');
 var requests = require('./requests.js');
 
 var router = express.Router();
