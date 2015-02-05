@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="description" content="making decision easier">
+  <title>Should I like ___?</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body ng-app="app">
+  <div id="background">
+    <div id="status">
+      <img src="assets/img/bg.jpg">
+      <div class="name fancy-font">Should I</div>
+      <div id="social">
+        <a class="facebook" href="http://facebook.com">Facebook</a>
+        <a class="twitter" href="http://twitter.com">Twitter</a>
+        <a class="instagram" href="http://instagram.com">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div ui-view></div>
+
+  <!-- Client-site Requirements -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/bootstrap/dis/js/bootstrap.js"></script>
+
+  <!-- Angular Modules -->
+</body>
+
+</html>
