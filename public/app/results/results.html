@@ -1,0 +1,9 @@
+<div class="results-page">
+  <h1 class="answer" ng-model="answer">{{ answer }}</h1>
+  <form action="#/">
+    <input type="submit" class="again-button" value="Try Again?">
+  </form>
+  <div class="more-link" ng-click="displayInfo()">More Info</div>
+  <div ng-model="cover"><img src="{{ cover }}"></div>
+  <div ng-model="url"><a href="http://pitchfork.com" + {{ url }}>{{ message }}</a></div>
+</div>
