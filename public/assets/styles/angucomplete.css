@@ -1,0 +1,47 @@
+.form-control {
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  width: 20rem;
+  padding: .5rem;
+  font-size: 1.75rem;
+  border-bottom: 0.15rem solid #FFB74D;
+}
+
+/* .angucomplete-holder {
+  position: relative;
+} */
+.angucomplete-dropdown {
+  border-top: 0.15rem solid #FFB74D;
+  width: 20.25rem;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+  margin-top: -0.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.angucomplete-searching {
+  font-family: 'Lato' sans-serif;
+  color: #FFF8E1;
+  font-size: 1.75rem;
+  text-align: left;
+}
+.angucomplete-description {
+  color: #FFF8E1;
+  font-size: 1.75rem;
+}
+.angucomplete-row {
+  font-family: 'Lato' sans-serif;
+  padding: .25rem 1rem;
+  color: #FFF8E1;
+  font-size: 1.75rem;
+  text-align: left;
+  margin-bottom: 4px;
+  /* overflow: hidden; */
+}
+.angucomplete-selected-row, .angucomplete-row:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 90%;
+  color: #FFF8E1;
+}
