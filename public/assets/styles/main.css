@@ -37,11 +37,10 @@ input {
 }
 
 // Search page
-.search-page, .results-page {
+.search-page {
   position: relative;
 }
-
-#title {
+#title, .answer {
   text-align: center;
   position: absolute;
   top: 10rem;
@@ -51,20 +50,49 @@ input {
   color: #FFF3E0;
 }
 
-.search-bar, .answer, .again-button, .more-info {
+.search-bar {
   position: absolute;
   top: 18rem;
   left: 10rem;
 }
 
 .search-button {
-  /* outline: none; */
   position: absolute;
-  left: -9999px;
-  width: 2rem;
-  height: 2rem;
-  background-color: red;
+  top: 0.25rem;
+  left: 22rem;
 }
 
-
 // Result page
+.answer {
+  margin-left: 10rem;
+}
+.more-info {
+  position: absolute;
+  top: 25rem;
+  left: 10rem;
+}
+.again-button {
+  position: absolute;
+  top: 18rem;
+  left: 10rem;
+  width: 8rem;
+  height: 3rem;
+}
+
+.search-button, .again-button {
+  width: 8rem;
+  height: 3rem;
+  font-family: 'Lato' sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1.5px solid #FFB74D;
+  border-radius: 0.2rem;
+  color: #FFF3E0;
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.search-button:hover, .again-button:hover {
+  background: #FFB74D;
+}
