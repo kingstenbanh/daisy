@@ -8,7 +8,7 @@ var router = require('./server/routes.js');
 var connection = require('./server/connection.js');
 
 var app = express();
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());

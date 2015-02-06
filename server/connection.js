@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var uri = process.env.DATABASE_URL;
+var uri = 'mongodb://admin:admin@ds041157.mongolab.com:41157/cobalt_records';
 
 // connect to MongoLabs database
 mongoose.connect(uri);

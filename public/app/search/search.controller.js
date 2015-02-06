@@ -2,11 +2,12 @@
 
 angular
   .module('app.search', [])
-  .controller('Search', _Search);
+  .controller('Search', Search);
 
-_Search.$inject = ['$scope', 'search', '$state'];
+Search.$inject = ['$scope', 'search', '$state'];
 
-function _Search($scope, search, $state) {
+function Search($scope, search, $state) {
+  //fetching artist list
   search.getSource(function(artists) {
     $scope.artists = artists;
   });

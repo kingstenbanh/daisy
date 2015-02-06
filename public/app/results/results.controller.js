@@ -2,20 +2,21 @@
 
 angular
   .module('app.results', [])
-  .controller('Results', _Results);
+  .controller('Results', Results);
 
-_Results.$inject = ['$scope', 'search', '$state'];
+Results.$inject = ['$scope', 'search', '$state'];
 
-function _Results ($scope, search, $state) {
+function Results ($scope, search, $state) {
+
   $scope.answer = search.getAnswer();
   $scope.message = '';
 
   $scope.displayInfo = displayInfo;
 
-  function displayInfo() {
-    var infoObj = search.getInfo();
-    $scope.url = infoObj.url;
-    $scope.cover = infoObj.cover;
-    $scope.message = 'View source';
+  function displayInfo () {
+     var infoObj = search.getInfo();
+     $scope.url = infoObj.url;
+     $scope.cover = infoObj.cover;
+     $scope.message = 'View source';
   }
 }

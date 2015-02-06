@@ -13,7 +13,7 @@ angular
 _config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
 function _config($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
 
   // set up routes
   $stateProvider
