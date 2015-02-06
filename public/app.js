@@ -2,7 +2,11 @@
 
 angular
   .module('app', [
-    'ui.router'
+    'ui.router',
+    'app.angucomplete',
+    'app.search',
+    'app.services',
+    'app.results'
   ])
   .config(_config);
 
