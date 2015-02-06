@@ -3,7 +3,7 @@ var path = require('path');
 var pitchfork = require('./pitchfork.js');
 var utils = require('./utils.js');
 
-var Result = require('./results.schema.js');
+var Results = require('./results.schema.js');
 var requests = require('./requests.js');
 
 var router = express.Router();
@@ -11,7 +11,7 @@ var fs = require('fs');
 
 router.use(function(req, res, next) {
   console.log('Something is happening');
-  nex(); // make sure we go to the next routes and dont' stop here
+  next(); // make sure we go to the next routes and dont' stop here
 });
 
 // GET homepage
@@ -24,7 +24,7 @@ router
   .route('/artists')
   .get(function(req, res) {
     var artistsFile = path.join(__dirname, '../artist.json');
-    fs.readFile(artistFile, function(err, data) {
+    fs.readFile(artistsFile, function(err, data) {
       res.send(JSON.parse(data));
     });
   });
